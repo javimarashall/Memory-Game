@@ -1,18 +1,18 @@
 import React from "react";
 import "./style.css";
 
-function FriendCard(props) {
+function BeagleCard(props) {
     return (
-        <div className="card">
+        <div className="card" style="width:12rem;">
             <div className="img-container">
-                <img alt={props.name} src={props.image} />
+                <img alt="memory game" src={props.image} />
             </div>
-            
-            <span onClick={() => props.removeFriend(props.id)} className="remove">
+
+            {/* <span onClick={() => props.removeFriend(props.id)} className="remove">
                 𝘅
-      </span>
+      </span> */}
         </div>
     );
 }
 
-export default FriendCard;
+export default BeagleCard;
