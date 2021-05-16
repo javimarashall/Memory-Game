@@ -1,18 +1,23 @@
-import React from "react";
+import { Component } from "react";
 import "./style.css";
 
-function BeagleCard(props) {
-    return (
-        <div className="card" style="width:12rem;">
-            <div className="img-container">
-                <img alt="memory game" src={props.image} />
-            </div>
+export default class BeagleCard extends Component {
+    constructor(props) {
+        super(props);
+        this.state = {
 
-            {/* <span onClick={() => props.removeFriend(props.id)} className="remove">
-                𝘅
-      </span> */}
-        </div>
-    );
+        }
+    }
+
+    render() {
+        return (
+            <div className="card-deck">
+                <div className="card" onClick={() => this.props.handler(this.props.id)}>
+                    <div className="img-container">
+                        <img alt="memory game" src={this.props.image} />
+                    </div>
+                </div>
+            </div>    
+        );
+    }
 }
-
-export default BeagleCard;

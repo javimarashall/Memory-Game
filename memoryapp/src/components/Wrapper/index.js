@@ -1,8 +1,15 @@
-import React from "react";
+import { Component } from "react";
 import "./style.css";
 
-function Wrapper(props) {
-  return <div className="wrapper">{props.children}</div>;
-}
+export default class Wrapper extends Component {
+    constructor(props) {
+        super(props);
+        this.state = {
+            
+        }
+    }
 
-export default Wrapper;
+    render() {
+        return (<div className="wrapper">{this.props.children}</div>)
+    }
+}
