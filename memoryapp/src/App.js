@@ -67,10 +67,10 @@ export default class App extends Component {
         return (
             <Wrapper>
 
-                <h6>Score: {this.state.score}| Top Score: {this.state.topScore}</h6>
+                <h4>Score: {this.state.score}| Top Score: {this.state.topScore}</h4>
                 <div>
                     <div class="container">
-                        <div class="row">
+                        <div class="row justify-content-md-center">
 
                                 {this.state.beagles.map(beagle => (
                                     <BeagleCard

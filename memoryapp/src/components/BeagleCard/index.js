@@ -11,13 +11,13 @@ export default class BeagleCard extends Component {
 
     render() {
         return (
-            <div className="card-deck">
+            
                 <div className="card" onClick={() => this.props.handler(this.props.id)}>
                     <div className="img-container">
                         <img alt="memory game" src={this.props.image} />
                     </div>
                 </div>
-            </div>    
+               
         );
     }
 }
