@@ -1,7 +1,6 @@
 * {
     box-sizing: border-box;
-    font-family: "lobster";
-
+    background-color: rgb(212, 19, 138);
     text-align: center;
     
   }
@@ -9,5 +8,12 @@
     padding: 0;
     margin: 0;
     height: 100%;
-   
+    background-color: rgb(194, 48, 207);
   }
+  .jumbotron {
+    font-family: "Lobster";
+    background-color: rgb(132, 25, 219);
+}
+.container {
+  background-color: rgb(212, 19, 138);
+}
