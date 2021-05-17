@@ -14,7 +14,13 @@ export default class App extends Component {
             topScore: 0
         };
     }
-    
+
+    // componentDidMount() {
+    //     axios.get("/tacos").then((data)=> {
+    //         this.setState(data);
+    //     });
+    // }
+
     shuffle = (array) => {
         var currentIndex = array.length, temporaryValue, randomIndex;
         // While there remain elements to shuffle...
@@ -34,7 +40,7 @@ export default class App extends Component {
         let topScore = this.state.topScore;
         let score = this.state.score;
         //shuffle
-        const shuffled =  this.shuffle(this.state.beagles);
+        const shuffled = this.shuffle(this.state.beagles);
         //updated picked
         let pickedArray = this.state.picked;
         //update score?
@@ -60,20 +66,22 @@ export default class App extends Component {
     render() {
         return (
             <Wrapper>
-                <div class="jumbotron jumbotron-fluid">
-                    <h1 class="display-4">Welcome To Beagle Memory Game</h1>
-                    <h8 class="lead">Click on an image to earn points, but don't click on any more than once!</h8>
-                    <h6>Score: {this.state.score}| Top Score: {this.state.topScore}</h6>
-                </div>
+
+                <h6>Score: {this.state.score}| Top Score: {this.state.topScore}</h6>
                 <div>
-                {this.state.beagles.map(beagle => (
-                    <BeagleCard
-                        id={beagle.id}
-                        key={beagle.id}
-                        image={beagle.image}
-                        handler={this.handlePicClick}
-                    />               
-                ))};
+                    <div class="container">
+                        <div class="row">
+
+                                {this.state.beagles.map(beagle => (
+                                    <BeagleCard
+                                        id={beagle.id}
+                                        key={beagle.id}
+                                        image={beagle.image}
+                                        handler={this.handlePicClick}
+                                    />
+                                ))};
+                        </div>
+                    </div>
                 </div>
             </Wrapper>
         );
