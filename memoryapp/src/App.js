@@ -67,7 +67,7 @@ export default class App extends Component {
         return (
             <Wrapper>
 
-                <h4>Score: {this.state.score}| Top Score: {this.state.topScore}</h4>
+                <h4 className="score">Score: {this.state.score} | Top Score: {this.state.topScore}</h4>
                 <div>
                     <div class="container">
                         <div class="row justify-content-md-center">

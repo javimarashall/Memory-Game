@@ -1,0 +1,13 @@
+.display-4 {
+    text-shadow: 2px 2px 2px rgb(66, 66, 66);
+
+}
+.lead {
+    font-size: 30px;
+}
+.score {
+    font-size: 30px;
+};
+.jumbotron {
+    font-family: "Lobster";
+}
