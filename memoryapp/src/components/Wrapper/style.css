@@ -1,0 +1,14 @@
+.wrapper {
+    
+    background: black;
+    height: 100%;
+    display: flex;
+    flex-flow: row wrap;
+    padding: 20px;
+    justify-content: space-evenly;
+    overflow: auto;
+    margin:10px;
+    font-family: "Lobster";
+    
+}
+  
