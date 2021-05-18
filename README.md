@@ -39,10 +39,10 @@ This code snippet is from App.js where the application uses react to render the 
 https://github.com/javimarashall/Memory-Game
 
 ## Deploy Link
-
+https://javimarashall.github.io/Memory-Game/
 
 ## Portfolio Link
-
+https://javimarashall.github.io/Updated-Portfolio-Page-2/
 
 ## Personal Links
 [Github](https://github.com/javimarashall)<br>
