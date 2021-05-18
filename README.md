@@ -6,8 +6,15 @@ This software contains an application called, Welcome to the Beagle Memory Game.
 ## Site
 ![Site](./memoryapp/assets/site.gif)
 
+## Technologies
+* HTML - Used to build the website
+* CSS - Used to style the website
+* Bootstrap 4.6 - Used as the CSS framework 
+* React - Used on the client side
+* Git - Used to upload to to github
+* GitHub - Used to store the repository
 ## Code Snippet
-
+This code snippet is from App.js where the application uses react to render the BeagleCard over and over again. I included this snippet because I think react is really cool in being able to use a component over and over again.
 
 ```javascript
 <Wrapper>
@@ -28,3 +35,15 @@ This software contains an application called, Welcome to the Beagle Memory Game.
     </div>
 </Wrapper>
 ```
+## Repository Link
+https://github.com/javimarashall/Memory-Game
+
+## Deploy Link
+
+
+## Portfolio Link
+
+
+## Personal Links
+[Github](https://github.com/javimarashall)<br>
+[Linkedin](https://www.linkedin.com/in/javier-mondragon-7b471719b/)
