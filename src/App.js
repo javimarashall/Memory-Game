@@ -15,12 +15,6 @@ export default class App extends Component {
         };
     }
 
-    // componentDidMount() {
-    //     axios.get("/tacos").then((data)=> {
-    //         this.setState(data);
-    //     });
-    // }
-
     shuffle = (array) => {
         var currentIndex = array.length, temporaryValue, randomIndex;
         // While there remain elements to shuffle...
@@ -65,12 +59,16 @@ export default class App extends Component {
 
     render() {
         return (
-            <Wrapper>
-
-                <h4 className="score">Score: {this.state.score}  | Top Score: {this.state.topScore} </h4>
-                <div>
-                    <div class="container">
-                        <div class="row justify-content-md-center">
+            <div>
+                <nav className="navbar  sticky-top navbar-expand-lg navbar-light bg-light">
+                    <div className="container-fluid justify-content-center">
+                        <h4 className="score text-center">Score: {this.state.score}  | Top Score: {this.state.topScore} </h4>
+                    </div>
+                </nav>
+                <Wrapper>
+                    <div>
+                        <div className="container-fluid">
+                            <div className="row justify-content-md-center">
 
                                 {this.state.beagles.map(beagle => (
                                     <BeagleCard
@@ -80,10 +78,11 @@ export default class App extends Component {
                                         handler={this.handlePicClick}
                                     />
                                 ))}
+                            </div>
                         </div>
                     </div>
-                </div>
-            </Wrapper>
+                </Wrapper>
+            </div>
         );
     }
 }
