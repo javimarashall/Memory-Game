@@ -1,0 +1,27 @@
+/* .wrapper {
+    
+    background: black;
+    
+    display: flex;
+    flex-flow: row wrap;
+    padding: 20px;
+    justify-content: space-evenly;
+    overflow: auto;
+    margin:10px;
+    font-family: "Lobster";
+    
+} */
+/* @media screen and (max-width: 375px) {
+    .wrapper {    
+        background: black;
+        display: flex;
+        flex-flow: row wrap;
+        padding: 20px;
+        justify-content: space-evenly;
+        overflow: auto;
+        margin:10px;
+        margin-left: 40px;
+        font-family: "Lobster";
+        
+    }
+} */
